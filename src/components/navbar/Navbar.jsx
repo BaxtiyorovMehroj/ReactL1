@@ -1,0 +1,14 @@
+
+import './Navbar.css'
+
+export default function Navbar({usersLength}) {
+  return (
+    <div className='navbar'>
+      <div className='navbar-container container'>
+        <h1 className='navbar-logo'>User</h1>
+        <h3 className='navbar-counter'> {usersLength> 0 ? "You have " + usersLength : "No Users:( "}</h3>
+      </div>
+      </div>
+  )
+}
+

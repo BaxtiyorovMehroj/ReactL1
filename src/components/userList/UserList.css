@@ -1,0 +1,56 @@
+.userList-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 5rem 1rem;
+}
+
+.card-inner {
+    width: 250px;
+    text-align: center;
+    padding: 0.8rem 0.5rem;
+    transition: transform 0.2s;
+}
+hr {
+    width: 1px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.623);
+    opacity: 0;
+    transition: 0.6s;
+  }
+
+.card-inner:hover {
+    transition: 1s;
+    box-shadow: 1px 0 10px 1px rgba(0, 0, 0, 0.925);
+  
+}
+
+.card-inner img {
+    width: 150px;
+    height: 150px;
+    border-radius:50%;
+    /* object-fit: cover; */
+}
+.card-inner:hover img{
+    width: 150px;
+    margin-top: 10px;
+    height: 150px;
+    border-radius:5%;
+    transition: 0.5s;
+    /* object-fit: cover; */
+}
+
+.card-inner button {
+    border: 0;
+    font-family: inherit;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+@media (max-width:907px) {
+    .card-inner {
+        width: 100%;
+    }
+}
